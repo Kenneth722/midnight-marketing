@@ -7,7 +7,7 @@
 	      <a href="index.html" class="logo d-flex align-items-center">
 	        <!-- Uncomment the line below if you also wish to use an image logo -->
 	        <!-- <img src="assets/img/logo.png" alt=""> -->
-	        <h1 class="d-flex align-items-center">Midnight-Marketing</h1>
+	        <h1 class="d-flex align-items-center">411 Socials</h1>
 	      </a>
 
 	      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -17,11 +17,11 @@
 	        <ul>
 	          <li><a href="index.html" class="active">Home</a></li>
 	          <li><a href="about.html">About</a></li>
-	          <li><a href="services.html">Services</a></li>
-	          <li><a href="portfolio.html">Portfolio</a></li>
-	          <li><a href="team.html">Team</a></li>
+	          <li><a href="services.html">Services</a></li>	
 	          <li><a href="blog.html">Blog</a></li>
-	          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+	          <li><a href="contact.html">Contact</a></li>
+	          <li><a href="contact.html">Login</a></li>
+	          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
 	            <ul>
 	              <li><a href="#">Dropdown 1</a></li>
 	              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -37,8 +37,7 @@
 	              <li><a href="#">Dropdown 3</a></li>
 	              <li><a href="#">Dropdown 4</a></li>
 	            </ul>
-	          </li>
-	          <li><a href="contact.html">Contact</a></li>
+	          </li> -->
 	        </ul>
 	      </nav><!-- .navbar -->
 
