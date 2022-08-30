@@ -19,10 +19,10 @@
         	<h2 data-aos="fade-up">Sub Categories</h2>
           <div class="row gy-5">
           <?php foreach($sub_categories as $sub_category) { ?>
-            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
               <div class="icon flex-shrink-0"><i class="bi bi-list-ul" style="color: #ffffff;"></i></div>
               <div>
-                <h4 class="title"><a href="" class="stretched-link text-white"><?php echo $sub_category->name; ?></a></h4>
+                <h4 class="title"><a href="services/service?id=<?php echo $sub_category->id; ?>" class="stretched-link text-white"><?php echo $sub_category->name; ?></a></h4>
               </div>
             </div>
           <?php } ?>
