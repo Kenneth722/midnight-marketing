@@ -22,11 +22,30 @@
             $description = $this->input->post('description');
             $date = gmdate('Y-m-d H:i:s');
 
+            $config['upload_path']          = './uploads/';
+            $config['allowed_types']        = 'gif|jpg|png';
+            $config['max_size']             = 100;
+            $config['max_width']            = 1024;
+            $config['max_height']           = 768;
+
+            $this->load->library('upload', $config);
+
+            if ( ! $this->upload->do_upload('img_url'))
+            {
+                $error = array('error' => $this->upload->display_errors());
+            }
+            else
+            {
+                $path = $this->upload->data();
+                $img = "uploads/".$path['file_name'];
+            }
+
             $data = array();
 
             $data = array(
                 'name' => $name,
                 'description' => $description,
+                'img_url' => $img,
                 'created_at' => $date,
             );
 
@@ -38,7 +57,7 @@
         public function subCategory() {
             $id = $this->input->get('id');
             $data['category_details'] = $this->category_model->getCategoryById($id);
-            $data['sub_categories'] = $this->category_model->getSubCategories();
+            $data['sub_categories'] = $this->category_model->getSubCategoriesByCategoryId($id);
             $this->load->view('templates/header');
             $this->load->view('categories/sub_category', $data);
         }

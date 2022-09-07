@@ -23,7 +23,7 @@
               </div>
             </div>
             <div class="card-body">
-              <form action="categories/addNew" method="POST">
+              <form action="categories/addNew" method="POST" enctype="multipart/form-data">
                 <div class="row">
                   <div class="col-md-12 col-sm-12">
                     <div class="form-group">
@@ -35,6 +35,12 @@
                     <div class="form-group">
                       <label class="form-label">Description</label>
                       <input type="text" name="description" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Image</label>
+                      <input type="file" name="img_url" class="form-control">
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-12 mt-3">

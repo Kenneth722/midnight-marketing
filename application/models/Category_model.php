@@ -28,6 +28,13 @@
             return $query->result();
         }
 
+        public function getSubCategoriesByCategoryId($id) {
+            $this->db->select('*');
+            $this->db->where('category_id', $id);
+            $query = $this->db->get('sub_category');
+            return $query->result();
+        }
+
         public function getSubCategoryById($id) {
             $this->db->where('id', $id);
             $query = $this->db->get('sub_category');

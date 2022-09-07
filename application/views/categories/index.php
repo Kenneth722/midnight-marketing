@@ -16,7 +16,7 @@
         <div class="col-xl-1">
         	
         </div>
-        <div class="col-xl-7 services-list" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-xl-6 services-list" data-aos="fade-up" data-aos-delay="100">
         	<div class="row gy-5">
         	<?php foreach($categories as $category) { ?>
     			<div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
@@ -28,6 +28,9 @@
 	          	<!-- <a href="categories/addSubCategoryView?id=<?php echo $category->id; ?>"><i class="bi bi-plus" style="color: #ffffff;"></i></a> -->
         	<?php } ?>
         	</div>
+        </div>
+        <div class="col-xl-1" data-aos="fade-up" data-aos-delay="100">
+          <a href="categories/addNewView"><i class="bi bi-plus" style="color: #ffffff;">Add New</i></a>
         </div>
       </div>
     </div>
